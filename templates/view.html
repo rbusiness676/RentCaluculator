@@ -1,0 +1,40 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+    <title>List</title>  
+</head>  
+<body>  
+  
+<h3>Books Information</h3>  
+<table border=5>  
+    <thead>  
+        <td>Regular Books</td>  
+        <td>Fiction Books</td>  
+        <td>Novels Books</td>  
+        <td>No of Days for Regular Books</td> 
+        <td>No of Days for Fiction  Books</td>
+        <td>No of Days for Novels Books</td>
+        <td>Total Rent</td>
+               
+    </thead>  
+      
+    {% if book%}
+      
+        <tr>  
+            <td>{{book.regular_books}}</td>
+            <td>{{book.novels_books}}</td>
+            <td>{{book.fiction_books}}</td>
+            <td>{{book.regular_days}}</td>
+            <td>{{book.novels_days}}</td>
+            <td>{{book.fiction_days}}</td>
+            <td>{{book.total_rent}}</td>
+        </tr>  
+      
+    {% endif %}
+</table>  
+<br><br>  
+  
+<a href="/">Go back to home page</a>  
+  
+</body>  
+</html>  
